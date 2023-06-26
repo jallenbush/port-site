@@ -81,7 +81,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className='flex gap-x-5 items-center -mt-6 place-content-end'>
+            <div className='flex gap-x-5 items-center place-content-start'>
             <Link
             to='contact'
             activeClass='active'
@@ -89,9 +89,9 @@ const About = () => {
             spy={true}>
               <button className='btn btn-sm'>Contact Me</button>
             </Link> 
-              <a href={Resume} className='text-gradient btn-link text-sm' download={'jassmon-allen-resume'} 
+              <a href={Resume} className='text-gradient text-[12px] btn-link text-sm' download={'jassmon-allen-resume'} 
               target='_blank' rel='noopener noreferrer'>
-                Download My Resume</a>
+                Download My Resume Here</a>
             </div>
           </motion.div>
         </div>

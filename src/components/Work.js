@@ -50,11 +50,11 @@ const Work = () => {
             className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0 '>
             {/* text */}
             <div>
-              <h2 className='h2 leading-tight text-accent py-4'>
+              <h2 className='h2 leading-tight text-accent py-2'>
                 <br/><br/><br/>My Latest <br /> 
                 Work.
               </h2>
-              <p className=' max-w-sm mb-6'>
+              <p className=' max-w-sm mb-16'>
               Beyond my academic pursuits, I have gained valuable hands-on experience through personal projects. 
               Here, you'll find a curated collection of my work that reflects my technical skills, problem-solving 
               abilities, and dedication to delivering innovative solutions. I invite you to explore my projects, 
@@ -83,8 +83,8 @@ const Work = () => {
                   {title}
                 </button>
               <a href={link}>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Code
+                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-blue-500">
+                  <strong>Code</strong>
                 </button>
               </a>
               </div>

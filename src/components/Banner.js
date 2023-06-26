@@ -24,7 +24,7 @@ const Banner = () => {
             initial='hidden'
             whileInView={'show'} 
             viewport={{once: false, amount: 0.7}} 
-            className='text-[55px] font-bold leading-[0.8] lg:text-[95px]'>
+            className='text-[55px] -mt-8 font-bold leading-[0.8] lg:text-[95px]'>
               JASSMON<span> ALLEN</span>
             </motion.h1>
 
@@ -68,7 +68,7 @@ const Banner = () => {
             initial='hidden'
             whileInView={'show'} 
             viewport={{once: false, amount: 0.7}}
-            className='flex max-w-max gap-x-6 items-center mb-8 -mt-4 mx-auto lg:mx-0'>
+            className='flex max-w-max gap-x-6 items-center mb-8 mx-auto lg:mx-0'>
               <Link
               to='contact'
               activeClass='active'
@@ -93,7 +93,7 @@ const Banner = () => {
             initial='hidden'
             whileInView={'show'} 
             viewport={{once: false, amount: 0.7}}
-            className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0 -mt-3'>
+            className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
               <a href='https://www.linkedin.com/in/jassmonallen27' target='_blank' rel='noopener noreferrer'>
                 <FaLinkedin/>
               </a>
