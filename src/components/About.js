@@ -91,7 +91,7 @@ const About = () => {
             </Link> 
               <a href={Resume} className='text-gradient text-[12px] btn-link text-sm' download={'jassmon-allen-resume'} 
               target='_blank' rel='noopener noreferrer'>
-                Download My Resume Here</a>
+                Download My Resume</a>
             </div>
           </motion.div>
         </div>
