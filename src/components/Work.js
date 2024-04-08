@@ -3,38 +3,38 @@ import React from 'react';
 import { motion } from 'framer-motion';
 //variants
 import { fadeIn } from '../variants';
-//img
-import Img1 from '../assets/port-img1.png';
-import Img2 from '../assets/port-img2.png';
-import Img3 from '../assets/port-img3.png';
-//import Img4 from '../assets/port-img4.png';
+
+import sqlp from '../assets/sqlp.png';
+import wsp from '../assets/wsp.png';
+import powerbi from '../assets/power.png';
+import tableau from '../assets/tableaup.png';
 
 //portfolio data
 const work = [
   {
     id: 1,
-    src: Img1,
-    title:'Movie App',
+    src: sqlp,
+    title:'SQL Project',
     link: 'https://github.com/jallenbush',
   },
   {
     id: 2,
-    src: Img2,
-    title:'Social App',
+    src: powerbi,
+    title:'Power BI Project',
     link: 'https://github.com/jallenbush',
   },
   {
     id: 3,
-    src: Img3,
-    title:'2D Retro Game',
+    src: wsp,
+    title:'Web Scraping Project',
+    link: 'https://github.com/jallenbush',
+  }
+  ,{
+    id: 4,
+    src: tableau,
+    title:'Tableau Project',
     link: 'https://github.com/jallenbush',
   },
-  /*{
-    id: 4,
-    src: Img3,
-    title:'Weather App',
-    link: 'https://github.com/jallenbush',
-  },*/
 ];
 
 const Work = () => {
@@ -47,17 +47,18 @@ const Work = () => {
             initial='hidden'
             whileInView={'show'}
             viewport={{once: false, amount: 0.3}}
-            className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0 '>
+            className='flex-1 flex flex-col gap-y-10 mb-10 -mt-14 lg:mb-0'>
             {/* text */}
             <div>
-              <h2 className='h2 leading-tight text-accent py-2'>
+              <h2 className='h2 leading-tight text-accent py-0'>
                 <br/><br/><br/>My Latest <br /> 
                 Work.
               </h2>
-              <p className=' max-w-sm mb-16'>
+              <p className=' max-w-sm mb-8'>
               Beyond my academic pursuits, I have gained valuable hands-on experience through personal projects. 
-              Here, you'll find a curated collection of my work that reflects my technical skills, problem-solving 
-              abilities, and dedication to delivering innovative solutions. I invite you to explore my projects, 
+              Here, you'll find a curated collection of my work that reflects my adeptness in data-driven 
+              problem-solving, statistical analysis, and the implementation of innovative solutions. I invite 
+              you to explore my projects, 
               delve into my accomplishments, and get a glimpse of the value I can bring to your organization.  
               </p>
               <a href='https://github.com/jallenbush' target='_blank' rel='noopener noreferrer'>
@@ -70,20 +71,20 @@ const Work = () => {
             initial='hidden'
             whileInView={'show'}
             viewport={{once: false, amount: 0.3}}
-            className='flex-1 grid sm:grid-cols-1 md:grid-cols-2 gap-4 px-10 sm:px-0' >
+            className='flex-1 grid sm:grid-cols-1 md:grid-cols-2 gap-1 px-10 sm:px-0 mb-12 pt-10'>
             {work.map(({ id, src, title, link }) => (
-            <div key={id} className="shadow-md shadow-blue-500 rounded-lg scale-95">
+            <div key={id} className="shadow-md shadow-amber-900 rounded-lg scale-90">
               <img
                 src={src}
                 alt=""
-                className="rounded-md duration-200 hover:scale-105"
+                className="rounded-md duration-200 hover:scale-105 w-full h-auto"
               />
               <div className="flex items-center justify-center ">
-                <button className='w-1/2 px-2 py-1 m-2 duration-200 hover:scale-105 text-md'>
+                <button className='w-full px-2 py-1 m-2 duration-200 hover:scale-105 text-md'>
                   {title}
                 </button>
               <a href={link}>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-blue-500">
+                <button className="w-full px-6 py-1 m-4 duration-200 hover:scale-105 text-yellow-900">
                   <strong>Code</strong>
                 </button>
               </a>

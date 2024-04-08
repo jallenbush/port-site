@@ -24,7 +24,7 @@ const Banner = () => {
             initial='hidden'
             whileInView={'show'} 
             viewport={{once: false, amount: 0.7}} 
-            className='text-[55px] -mt-8 font-bold leading-[0.8] lg:text-[95px]'>
+            className='text-[55px] -mt-2 -py-4 font-bold leading-[0.8] lg:text-[95px]'>
               JASSMON<span> ALLEN</span>
             </motion.h1>
 
@@ -33,19 +33,19 @@ const Banner = () => {
             initial='hidden'
             whileInView={'show'} 
             viewport={{once: false, amount: 0.7}}
-            className='mb-6 text-[26px] lg:text-[60px] font-secondary font-semibold uppercase loading-[1] '>
+            className='mb-4 text-[24px] lg:text-[50px] font-secondary font-semibold uppercase loading-[1] '>
               <span className=' text-white mr-4'>I am a</span>
               <TypeAnimation 
                 sequence={[
-                  'Developer',
+                  'Data Analyst',
                   2000,
-                  'Programmer',
+                  'Python Enthusiast',
                   2000,
-                  'Engineer',
+                  'Power BI Wizard',
                   2000,
                 ]}
                 speed={50}
-                className='text-accent'
+                className='text-accent' 
                 wrapper='span'
                 repeat={Infinity} 
               />
@@ -56,11 +56,12 @@ const Banner = () => {
             initial='hidden'
             whileInView={'show'} 
             viewport={{once: false, amount: 0.7}} 
-            className='mb-6 max-w-lg mx-auto lg:mx-0 sm:text-[15px]'> Welcome to my portfolio website! Through my years of academic 
-            study and hands-on projects I have developed a solid foundation in software development, algorithm design, 
-            and problem-solving. Whether you're a fellow developer, potential employer, or simply curious about my work, 
-            I invite you to explore my portfolio and discover how my knowledge and creativity can contribute to solving 
-            real-world challenges.
+            className='mb-4 max-w-lg mx-auto lg:mx-0 sm:text-[15px]'> Welcome to my portfolio website! 
+            Throughout my academic journey and hands-on projects, I've cultivated a strong 
+            expertise in data analysis, statistical modeling, 
+            and deriving actionable insights from complex datasets. Whether you're a fellow analyst, 
+            prospective employer, or just interested in my work, I encourage you to delve into my 
+            portfolio and see how my analytical skills and creativity can address real-world problems.
             </motion.p>
 
             <motion.div 
@@ -68,7 +69,7 @@ const Banner = () => {
             initial='hidden'
             whileInView={'show'} 
             viewport={{once: false, amount: 0.7}}
-            className='flex max-w-max gap-x-6 items-center mb-8 mx-auto lg:mx-0'>
+            className='flex max-w-max gap-x-6 items-center mb-4 mx-auto lg:mx-0'>
               <Link
               to='contact'
               activeClass='active'

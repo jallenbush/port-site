@@ -8,7 +8,7 @@ import { motion } from 'framer-motion'
 //varient
 import { fadeIn } from '../variants'
 
-import Resume from '../documents/jass-all-res.pdf';
+import Resume from '../documents/allenJassmon_res_dataAnalysis.pdf';
 import {Link} from 'react-scroll';
 
 const About = () => {
@@ -36,18 +36,18 @@ const About = () => {
           viewport={{once: false, amount: 0.3}}
           className='flex-1'>
             <h2 className='h2 text-accent'>About me.</h2>
-            <h3 className='h3 mb-3 text-lg'>
-            I am a recent computer science graduate with a passion for using technology to create innovative 
-            solutions. With a strong desire to make a positive impact in the tech industry, I am excited to 
+            <h3 className='h3 mb-2 text-lg'>
+            I am a computer science graduate with a passion for using technology to create innovative 
+            solutions. With a strong desire to make a positive impact in the data analytic sector, I am excited to 
             showcase my skills, projects, and achievements on this platform. 
             </h3>
-            <p className='mb-5'>
-            I have experience working with both frontend and backend tools, as well as object-oriented 
-            programing languages. This technical skill set includes, but is not limited to Python, Java, 
-            Django, Bootstrap, MySQL, HTML5, CSS, JavaScript, and React.
+            <p className='mb-4'>
+            I possess a strong skill set in data analytics, proficient in Python & SQL for data manipulation, 
+            data analysis, & database querying. I also have experience with visualization tools such as Microsoft Power
+            BI & Tableau for effectively presenting insights. 
             </p>
             {/* stats */}
-            <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
+            <div className='flex gap-x-6 lg:gap-x-10 mb-8'>
               <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
                   {inView ? <CountUp start={0} end={2} duration={1} /> : 

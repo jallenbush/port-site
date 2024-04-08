@@ -1,6 +1,6 @@
 import React from 'react';
 //images
-import Logo from "../assets/newDAlogo.png";
+import Logo from "../assets/logoda.svg";
 
 const Header = () => {
   return (

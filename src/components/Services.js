@@ -5,92 +5,76 @@ import { motion } from 'framer-motion';
 //variants
 import {fadeIn} from '../variants'; 
 //images
+//import css from '../assets/css.png'
+//import java from '../assets/java.png'
+//import bootstrap from '../assets/bootstrap.png'
+//import git from '../assets/git.png'
 import html from '../assets/html.png';
-import css from '../assets/css.png'
-import javascript from '../assets/javascript.png'
 import python from '../assets/python.png'
 import django from '../assets/django.png'
-import java from '../assets/java.png'
-import mysql from '../assets/mysql.png'
-import bootstrap from '../assets/bootstrap.png'
-import git from '../assets/git.png'
-import docker from '../assets/docker.png'
-import react from '../assets/react.png'
-import tailwind from '../assets/tailwind.png'
+import sql from '../assets/sql.png'
+import jup from '../assets/jup.png'
+import excel from '../assets/excel.png'
+import powerbi from '../assets/powerbi.png'
+import tableau from '../assets/tableau.png'
+import pandas from '../assets/pandas.png'
 
 //services data 
 const services = [
   {
     id: 1,
-    src: html,
-    title: "HTML",
-    style: "shadow-orange-500",
-  },
+    src: sql,
+    title: "SQL",
+    style: "shadow-amber-900",
+  },   
   {
     id: 2,
-    src: css,
-    title: "CSS",
-    style: "shadow-blue-500",
+    src: excel,
+    title: "Microsoft Excel",
+    style: "shadow-amber-900",
   },
   {
     id: 3,
-    src: javascript,
-    title: "JavaScript",
-    style: "shadow-yellow-500",
+    src: tableau,
+    title: "Tableau",
+    style: "shadow-amber-900",
   },
   {
     id: 4,
-    src: python,
-    title: "Python",
-    style: "shadow-blue-600",
+    src: powerbi,
+    title: "Microsoft Power BI",
+    style: "shadow-amber-900",
   },
   {
     id: 5,
-    src: django,
-    title: "Django",
-    style: "shadow-green-400",
+    src: jup,
+    title: "Jupyter",
+    style: "shadow-amber-900",
   },
   {
     id: 6,
-    src: java,
-    title: "Java",
-    style: "shadow-orange-500",
+    src: python,
+    title: "Python",
+    style: "shadow-amber-900",
   },
   {
     id: 7,
-    src: mysql,
-    title: "MySQL",
-    style: "shadow-blue-400",
+    src: pandas,
+    title: "Pandas",
+    style: "shadow-amber-900", 
   },
+  
   {
     id: 8,
-    src: bootstrap,
-    title: "Bootstrap",
-    style: "shadow-purple-400",
+    src: html,
+    title: "HTML",
+    style: "shadow-amber-900",
   },
   {
     id: 9,
-    src: git,
-    title: "Git",
-    style: "shadow-red-400",
-  },
-  {
-    id: 10,
-    src: docker,
-    title: "Docker",
-    style: "shadow-blue-400",
-  },
-  {
-    id: 11,
-    src: react,
-    title: "React",
-    style: "shadow-teal-400",
-  },
-  {
-    id: 12,
-    src: tailwind,
-    title: "Tailwind",
-    style: "shadow-teal-400",
+    src: django,
+    title: "Django",
+    style: "shadow-amber-900",
   },
 ];
 
@@ -111,14 +95,14 @@ const Services = () => {
             <h3 className='h3 max-w-[455px] mb-16 text-xl '>
             Here, you'll find a comprehensive list of the skills I have acquired throughout 
             my education and hands-on experiences. These skills have equipped me to tackle a wide range of 
-            real world challenges as a developer.
+            real world challenges as a data analysis.
             </h3>
           <Link
           to='work'
           activeClass='active'
           smooth={true}
           spy={true}>
-            <button className='btn btn-sm'>See My Work</button>
+            <button className='btn btn-sm px-8'>See My Work</button>
           </Link>
           </motion.div>
           {/*services*/}
@@ -129,21 +113,19 @@ const Services = () => {
              viewport={{once: false, amount: 0.3}}
              className='flex-1'>
             {/*services list*/}
-            <div className='w-full h-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8 px-12 sm:px-0 pt-8'>
+            <div className='w-full h-full grid grid-cols-2 sm:grid-cols-3 gap-4 text-center py-10 px-12 sm:px-0 pt-9'>
               {services.map((service, id) => {
                 //destructive service
                 const {src, title, style } = service;
                 return ( 
                   <div    
                     key={id}
-                    className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}>
-                    <img src={src} alt="" className="w-20 mx-auto"></img>
-                    
+                    className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`} style={{ position: 'relative', padding: '8px' }}>
+                    <img src={src} alt="" className="w-20 h-20 mx-auto"></img>
                     <div className='max-w-[476px]'>
-                      <h4 className='text-[18px] tracking-wider font-primary font-semibold mb-6'>
+                      <h4 className='text-[18px] tracking-wider font-primary font-semibold mb-2 pt-6'>
                         {title}
                       </h4>
-                
                     </div>
                   </div> 
                 );
