@@ -14,26 +14,26 @@ const work = [
   {
     id: 1,
     src: sqlp,
-    title:'SQL Project',
-    link: 'https://github.com/jallenbush',
+    title:'SQL: Covid-19 Project',
+    link: 'https://github.com/jallenbush/SQL/tree/main/SQL%20Scripts',
   },
   {
     id: 2,
     src: powerbi,
-    title:'Power BI Project',
-    link: 'https://github.com/jallenbush',
+    title:'PowerBI: Data Analysis Survey Project',
+    link: 'https://github.com/jallenbush/Power-BI/blob/main/Power%20BI/Dashboard.png',
   },
   {
     id: 3,
     src: wsp,
-    title:'Web Scraping Project',
-    link: 'https://github.com/jallenbush',
+    title:'Web Scraping: Company Revenue Project',
+    link: 'https://github.com/jallenbush/Python-Jupyter-Notebook/tree/main/Web%20Scraping/Web%20Scraping%20-%20Jupyter',
   }
   ,{
     id: 4,
     src: tableau,
-    title:'Tableau Project',
-    link: 'https://github.com/jallenbush',
+    title:'Tableau: AirB&B Project',
+    link: 'https://github.com/jallenbush/Tableau/blob/main/Tableau/tableau_AB%26B_Dash.png',
   },
 ];
 
@@ -61,7 +61,7 @@ const Work = () => {
               you to explore my projects, 
               delve into my accomplishments, and get a glimpse of the value I can bring to your organization.  
               </p>
-              <a href='https://github.com/jallenbush' target='_blank' rel='noopener noreferrer'>
+              <a href='https://github.com/jallenbush?tab=repositories' target='_blank' rel='noopener noreferrer'>
                 <button className='btn btn-sm'>View All Projects</button>
               </a>  
             </div>
