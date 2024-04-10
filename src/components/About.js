@@ -8,7 +8,7 @@ import { motion } from 'framer-motion'
 //varient
 import { fadeIn } from '../variants'
 
-import Resume from '../documents/allenJassmon_res_dataAnalysis.pdf';
+import Resume from '../documents/da_res_allenjass.pdf';
 import {Link} from 'react-scroll';
 
 const About = () => {
