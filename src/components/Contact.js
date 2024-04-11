@@ -30,7 +30,7 @@ const Contact = () => {
           initial='hidden'
           whileInView={'show'}
           viewport={{once: false, amount: 0.3}}
-          action="https://getform.io/f/686b26b1-bda4-49b5-b8d2-bfb1ff642d2b"
+          action="https://getform.io/f/lbjkonqa"
           method="POST"
           className='flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 py-4 items-start'>
             <input 
