@@ -123,7 +123,7 @@ const Services = () => {
                     className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`} style={{ position: 'relative', padding: '8px' }}>
                     <img src={src} alt="" className="w-20 h-20 mx-auto"></img>
                     <div className='max-w-[476px]'>
-                      <h4 className='text-[18px] tracking-wider font-primary font-semibold mb-2 pt-6'>
+                      <h4 className='text-[16px] tracking-wider font-primary font-semibold mb-2 pt-6'>
                         {title}
                       </h4>
                     </div>
