@@ -81,7 +81,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className='flex gap-x-5 items-center place-content-start'>
+            <div className=' flex gap-x-5 items-center place-content-end'>
             <Link
             to='contact'
             activeClass='active'

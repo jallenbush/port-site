@@ -32,7 +32,7 @@ const work = [
   ,{
     id: 4,
     src: tableau,
-    title:'Tableau: AirB&B Project',
+    title:'Tableau: AirBnB Project',
     link: 'https://github.com/jallenbush/Tableau/blob/main/Tableau/tableau_AB%26B_Dash.png',
   },
 ];

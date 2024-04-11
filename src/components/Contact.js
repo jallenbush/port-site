@@ -42,7 +42,7 @@ const Contact = () => {
             className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all' 
             type='text'
             name='email'
-            placeholder='Your Email Mail'/>
+            placeholder='Your Email'/>
             <textarea 
             name='message'
             className='bg-transparent border-b py-12 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-2'
