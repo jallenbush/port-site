@@ -9,7 +9,7 @@ import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
 
 import Resume from '../documents/da_res_allenjass.pdf';
-import {Link} from 'react-scroll';
+import { BsDownload } from 'react-icons/bs';
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -37,21 +37,23 @@ const About = () => {
           className='flex-1'>
             <h2 className='h2 text-accent'>About me.</h2>
             <h3 className='h3 mb-2 text-lg'>
-            I am a computer science graduate with a passion for using technology to create innovative 
-            solutions. With a strong desire to make a positive impact in the data analytic sector, I am excited to 
-            showcase my skills, projects, and achievements on this platform. 
+                          I'm a computer science graduate with a passion for using technology to create innovative 
+                          solutions in data analytics. Skilled in Python, SQL, and data visualization tools like Power BI
+                          and Tableau, I enjoy transforming raw data into meaningful insights that drive decision-making.   
             </h3>
             <p className='mb-4'>
-            I possess a strong skill set in data analytics, proficient in Python & SQL for data manipulation, 
-            data analysis, & database querying. I also have experience with visualization tools such as Microsoft Power
-            BI & Tableau for effectively presenting insights. 
+                          My experience includes analyzing diverse datasets, building interactive dashboards, and
+                          delivering actionable recommendations for business optimization. I'm excited to
+                          share my skills, projects, and achievements with you. Feel free to explore my portfolio
+                          and reach out if you'd like to connect!
             </p>
             {/* stats */}
             <div className='flex gap-x-6 lg:gap-x-10 mb-8'>
               <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                  {inView ? <CountUp start={0} end={2} duration={1} /> : 
+                  {inView ? <CountUp start={0} end={1} duration={1} /> : 
                   null}
+                  +
                 </div>
                 <div className='font-primary text-sm tracking-[2px] '>
                   Years of <br/>
@@ -60,38 +62,34 @@ const About = () => {
               </div>
               <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                  {inView ? <CountUp start={0} end={9} duration={2} /> : 
+                  {inView ? <CountUp start={0} end={10} duration={2} /> : 
                   null}
                   +
                 </div>
                 <div className='font-primary text-sm tracking-[2px] '>
                   Skills & Tools <br/>
-                  Comprehended
+                  Acquired  
                 </div>
               </div>
               <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
                   {inView ? <CountUp start={0} end={1} duration={1} /> : 
                   null}
-                  
+                  +
                 </div>
                 <div className='font-primary text-sm tracking-[2px] '>
-                  Degree <br/>
+                  Certifications <br/>
                   Acquired
                 </div>
               </div>
             </div>
             <div className=' flex gap-x-5 items-center place-content-end'>
-            <Link
-            to='contact'
-            activeClass='active'
-            smooth={true}
-            spy={true}>
-              <button className='btn btn-sm'>Contact Me</button>
-            </Link> 
-              <a href={Resume} className='text-gradient text-[12px] btn-link text-sm' download={'jassmon-allen-resume'} 
-              target='_blank' rel='noopener noreferrer'>
-                Download My Resume</a>
+                <a className='text-lg font-semibold mb-2'>Download My Resume:</a>
+            <a href={Resume} className='btn-link' download={'jassmon-allen-resume'} target='_blank' rel='noopener noreferrer'>
+                <button className='btn btn-sm text-xs'>
+                    <BsDownload size={18 } /> {/* Replace text with the icon */}
+                </button>
+            </a>
             </div>
           </motion.div>
         </div>

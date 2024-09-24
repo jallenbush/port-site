@@ -1,13 +1,13 @@
 import React from 'react';
-//immages
-import Images from '../assets/avatar.svg';
+//images
+import Images from '../assets/avatar.png';
 //icons
 import { FaGithub, FaLinkedin, FaDiscord } from "react-icons/fa";
 //type animation
 import { TypeAnimation } from "react-type-animation";
 //motion
 import { motion } from "framer-motion";
-//varients 
+//variants  
 import { fadeIn } from "../variants";
 //import link
 import {Link} from 'react-scroll';
@@ -56,12 +56,13 @@ const Banner = () => {
             initial='hidden'
             whileInView={'show'} 
             viewport={{once: false, amount: 0.7}} 
-            className='mb-4 max-w-lg mx-auto lg:mx-0 sm:text-[15px]'> Welcome to my portfolio website! 
-            Throughout my academic journey and hands-on projects, I've cultivated a strong 
-            expertise in data analysis, statistical modeling, 
-            and deriving actionable insights from complex datasets. Whether you're a fellow analyst, 
-            prospective employer, or just interested in my work, I encourage you to delve into my 
-            portfolio and see how my analytical skills and creativity can address real-world problems.
+                          className='mb-4 max-w-lg mx-auto lg:mx-0 sm:text-[15px]'>Welcome to my portfolio!
+                          Over the course of my studies and project work,
+                          I've honed my ability to analyze data, apply statistical models, and transform
+                          complex datasets into meaningful insights. Whether you're here as a peer,
+                          a potential employer, or someone with an interest in data, I encourage you to
+                          explore my projects and see how my analytical expertise and creative approach
+                          can tackle practical challenges.
             </motion.p>
 
             <motion.div 
@@ -88,12 +89,12 @@ const Banner = () => {
               </Link>
             </motion.div>
             
-            {/* soicals */}
+            {/* socials */}
             <motion.div 
-            variants={fadeIn('up', 0.7)} 
+            variants={fadeIn('up', 0.3)} 
             initial='hidden'
             whileInView={'show'} 
-            viewport={{once: false, amount: 0.7}}
+            viewport={{once: false, amount: 0.5}}
             className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
               <a href='https://www.linkedin.com/in/jassmonallen27' target='_blank' rel='noopener noreferrer'>
                 <FaLinkedin/>
